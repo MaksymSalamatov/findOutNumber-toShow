@@ -198,6 +198,9 @@ class Game {
             e.stopPropagation();
             e.preventDefault();
         }, true);
+        setTimeout(() => {
+            location.reload()
+        },1600)
         let timeEnd = Date.now() - this.timeStart;
         return this.gift.innerHTML = `You just spent ${timeEnd} milliseconds of your life ))`;
     }
